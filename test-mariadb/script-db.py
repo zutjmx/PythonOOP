@@ -1,5 +1,12 @@
 import mariadb
 
+from faker import Faker
+fake = Faker('es_MX')
+
+pais = fake.country()
+codigo = fake.country_code()
+capital = fake.city()
+
 # connection parameters
 conn_params= {
     "user" : "zutjmx",
@@ -14,10 +21,11 @@ connection= mariadb.connect(**conn_params)
 cursor= connection.cursor()
 
 # Populate countries table  with some data
-# cursor.execute("INSERT INTO countries(c_name, country_code, capital) VALUES (?,?,?)",
-#                ("Germany", "GER", "Berlin"))
+sql= "INSERT INTO countries(c_name, country_code, capital) VALUES (?,?,?)"
+data = (pais, codigo, capital)
+cursor.execute(sql, data)
 
-# connection.commit()
+connection.commit()
 
 # retrieve data
 cursor.execute("SELECT c_name, country_code, capital FROM countries")
