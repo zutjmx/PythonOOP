@@ -4,7 +4,7 @@ import mariadb
 conn_params= {
     "user" : "zutjmx",
     "password" : "sistemas",
-    "host" : "192.168.1.245",
+    "host" : "192.168.1.199",
     "database" : "db_usuarios_springboot"
 }
 

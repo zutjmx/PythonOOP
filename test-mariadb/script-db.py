@@ -11,8 +11,8 @@ capital = fake.city()
 conn_params= {
     "user" : "zutjmx",
     "password" : "sistemas",
-    "host" : "192.168.1.245",
-    "database" : "bd-processlog"
+    "host" : "192.168.1.199",
+    "database" : "db_springboot_cloud",
 }
 
 # Establish a connection
