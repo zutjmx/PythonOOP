@@ -7,7 +7,7 @@ print("Cantidad registrada: ", cantidad)
 
 productos = ["pantalon","Camisa","Zapatos","Corbata","Chaqueta"]
 for producto in productos:
-    print(productos)
+    print(producto)
 
 intentos = 1
 while intentos < 4:
