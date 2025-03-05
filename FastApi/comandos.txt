@@ -1,0 +1,2 @@
+# Para iniciar el servidor
+python -m uvicorn main:app --reload
