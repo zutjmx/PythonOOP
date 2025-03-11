@@ -1,0 +1,3 @@
+Este es un ejemplo de escritura en un archivo.
+Podemos escribir múltiples líneas de texto.
+La utilización de 'with' asegura que el archivo se cierre al finalizar.
