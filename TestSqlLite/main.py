@@ -41,4 +41,11 @@ with sqlite3.connect("../Datos/mi_base.db") as conexion:
     # Print a confirmation message
     print("Records inserted successfully!")
 
-
+cursor.execute("SELECT * FROM Estudiantes")
+rows = cursor.fetchall()
+print("Datos de la tabla Estudiantes:")
+for row in rows:
+    print(row)
+    
+conexion.close()
+    
